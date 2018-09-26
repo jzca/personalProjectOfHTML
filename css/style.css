@@ -1,0 +1,104 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.bigcontainer{
+    font-family: 'Mountains of Christmas';
+    text-align: center;
+    margin: auto;
+}
+h1 {
+    margin-bottom: 0;
+    margin-right: 2px;
+    text-align: right;
+}
+h5 {
+    text-align: right;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #7d97ad;
+    text-transform: uppercase;
+    color: #2d3c49;
+}
+.logo {
+    width: 70px; height: 100%;
+    padding: 5px 2px 8px 5px;
+}
+.mainimg {
+width: 100%;
+margin-top: 20px;
+}
+
+.firsth2 {
+    color: #7d97ad;
+}
+a {text-decoration: none;}
+h2.citytitle, p {
+    color: #2d3c49;
+}
+h2.citytitle {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+p {
+    margin-top: 2px;
+}
+.part3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    
+}
+.part3 .cities{
+    width:320px;
+    height: 180px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+} 
+
+@media screen and (min-width: 616px){
+    .firsth2{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .part3{
+    justify-content: space-evenly;
+    }
+    .part3 .cities{
+        width:190px;
+        height: 115px;
+
+    }
+    p{ font-size: 14px;}    
+}
+@media screen and (min-width: 800px){
+    .part3 .cities{
+        width: 250px;
+        height: 150px;
+
+    }
+    p{ font-size: 18px; }    
+}
+@media screen and (min-width: 1050px){
+    .firsth2{
+        text-align: left;
+        margin-left: 24px;
+    }
+    .bigcontainer{
+        max-width: 1050px;
+    }
+    .part3 .cities{
+        width: 315px;
+        height: 215px;
+
+    }
+    p{ font-size: 20px; }  
+}
